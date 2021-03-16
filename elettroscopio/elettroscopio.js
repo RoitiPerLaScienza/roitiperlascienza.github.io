@@ -25,7 +25,7 @@ function setup() {
     nearV = false;
     createCanvas(1100, 700);
     startObject();
-    img=loadImage("data/elettroscopio.png");
+    img=loadImage("elettroscopio/data/elettroscopio.png");
 }
 
 function draw(){
@@ -118,7 +118,7 @@ class Bachelite{
     constructor(){
         this.xB=width - width / 4;
         this.yB=height / 8;
-        this.bachelite=loadImage("data/bachelite.png");
+        this.bachelite=loadImage("elettroscopio/data/bachelite.png");
     }
 
     display(){
@@ -132,7 +132,7 @@ class Dito{
     constructor(){
         this.xD=width - width / 3 + 50;
         this.yD=height - height / 4;
-        this.dito=loadImage("data/dito.png");
+        this.dito=loadImage("elettroscopio/data/dito.png");
     }
 
     display(){
@@ -199,7 +199,7 @@ class Vetro{
     constructor(){
         this.xV=width - width / 4;
         this.yV=height / 3 + 80;
-        this.vetro=loadImage("data/vetro.png");
+        this.vetro=loadImage("elettroscopio/data/vetro.png");
     }
 
     display(){
