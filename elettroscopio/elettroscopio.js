@@ -17,14 +17,14 @@ let j = 0;
 let pposX = 0;
 let pposY = 0;
 
-function setup(){
+function setup() {
     touchB = false;
     touchV = false;
     touchD = false;
     nearB = false;
     nearV = false;
     createCanvas(1100, 700);
-    //start();
+    startObject();
     img=loadImage("data/elettroscopio.png");
 }
 
@@ -70,7 +70,7 @@ function draw(){
     }
 }
 
-function startfunc(){
+function startObject(){
     bac=new Bachelite();
     vet=new Vetro();
     dito=new Dito();
@@ -208,4 +208,3 @@ class Vetro{
     }
 
 }
-
