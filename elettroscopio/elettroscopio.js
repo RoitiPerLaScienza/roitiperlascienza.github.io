@@ -24,7 +24,7 @@ function setup(){
     nearB = false;
     nearV = false;
     createCanvas(1100, 700);
-    start();
+    //start();
     img=loadImage("data/elettroscopio.png");
 }
 
