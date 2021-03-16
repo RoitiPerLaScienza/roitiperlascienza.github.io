@@ -79,7 +79,7 @@ function preload(){
     Pausa2=loadImage("moto_armonico/data/TastoPausa2.png");
     FormuleOndaArmonica=loadImage("moto_armonico/data/FormuleMotoArmonico.PNG");
     FormulePendolo=loadImage("moto_armonico/data/FormulePendolo.PNG");
-    Comicfont=loadFont("moto_armonico/data/ComicSansMSBoldItalic.vlw");
+    Comicfont=loadFont("moto_armonico/data/Louis George Cafe.ttf");
 }
 
 function setup(){
