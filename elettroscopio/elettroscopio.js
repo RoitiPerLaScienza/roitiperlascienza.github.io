@@ -98,7 +98,7 @@ function title(){
 }
 
 function mouseDragged(){
-    if(mouseButton == LEFT_ARROW) {
+    if(mouseButton == LEFT) {
         if(mouseX >= bac.xB - 40 && mouseX <= bac.xB + 240 && mouseY >= bac.yB - 40 && mouseY <= bac.yB + 250) {
             bac.xB=mouseX;
             bac.yB=mouseY;
@@ -108,7 +108,7 @@ function mouseDragged(){
             vet.yV=mouseY - 20;
         }
     }
-    else if(mouseButton == RIGHT_ARROW) {
+    else if(mouseButton == RIGHT) {
         dito.xD=mouseX - 40;
         dito.yD=mouseY - 20;
     }
