@@ -32,9 +32,9 @@ function setup() {
   fullScreen();
   back=(200);
 
-  bussola= loadImage("compass.png");//inizializzazioni...
-  refresh= loadImage("refresh.png");
-  exit= loadImage("exit.jpg");
+  bussola= loadImage("campo_elettrico/data/compass.png");//inizializzazioni...
+  refresh= loadImage("campo_elettrico/data/refresh.png");
+  exit= loadImage("campo_elettrico/data/exit.jpg");
 
 
   scala= new Scala(9*width/20, 9*height/10-10);
@@ -443,7 +443,7 @@ class Barra {//menu laterali
       }
 
       if (millis()-timer> 60000) {
-        refresh=loadImage("refresh (piacevole ricordo).png");
+        refresh=loadImage("campo_elettrico/data/refresh (piacevole ricordo).png");
       }
       image(refresh, pos.x+base/2, pos.y+altezza*9/10, width/20, width/20);
     }
