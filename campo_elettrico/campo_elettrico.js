@@ -1,8 +1,8 @@
 let timer;
 
-final double k= 8.9875*pow(10, 9);//costanti fisiche
-final double epsilon= 1/(4*PI*k);
-final let nGriglia= 30;//30*30 bussole in schermo
+double k= 8.9875*pow(10, 9);//costanti fisiche
+double epsilon= 1/(4*PI*k);
+let nGriglia= 30;//30*30 bussole in schermo
 
 let inibisci;//serve a cancellare immagini a schermo durante modifica cariche
 let lunghezza_bussola;
