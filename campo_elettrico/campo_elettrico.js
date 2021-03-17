@@ -1,14 +1,77 @@
 let timer;
 
-double k= 8.9875*pow(10, 9);//costanti fisiche
-double epsilon= 1/(4*PI*k);
+let k= 8.9875*pow(10, 9);//costanti fisiche
+let epsilon= 1/(4*PI*k);
 let nGriglia= 30;//30*30 bussole in schermo
 
 let inibisci;//serve a cancellare immagini a schermo durante modifica cariche
 let lunghezza_bussola;
-color back;//colore background
+let back;//colore background
 let movimento;//true se oggetti in movimento
 let azione;//true se valore cariche è modificato
+
+class Scala {//governa la scala dell'ambiente
+  let fattore;//esponente
+  let press;
+  let pos;
+  let dim;
+
+  Scala(let a, let b) {
+    fattore=0;
+    press=true;
+    pos=createVector(a, b);
+    dim=createVector(110, 55);
+  }
+
+  function show() {//stampa pulsanti e scala su schermo (in basso al centro)
+    update();
+    strokeWeight(1);
+    stroke(0);
+    line(pos.x+5, pos.y, pos.x+5, pos.y+dim.y/2);//distanza tra lineette verticali è unita di 100px
+    line(pos.x+105, pos.y, pos.x+105, pos.y+dim.y/2);
+    fill(0);
+    textAlign(CENTER, CENTER);
+    textSize(dim.y*5/16);
+    text("1*10^"+(fattore+2)+'m', dim.x/2+pos.x, pos.y+dim.y/4);
+    fill(0, 255, 0);
+    circle(pos.x+dim.x/4, pos.y+dim.y*3/4, dim.x/6);//bottoni fattore
+
+    circle(pos.x+dim.x*3/4, pos.y+dim.y*3/4, dim.x/6);
+    fill(0);
+    text('+', pos.x+dim.x/4, pos.y+dim.y*3/4);
+    text('-', pos.x+dim.x*3/4, pos.y+dim.y*3/4);
+  }
+
+
+
+  function update() {//aggiorna scala
+    if (mouseIsPressed&dist(pos.x+dim.x/4, pos.y+dim.y*3/4, mouseX, mouseY)<=dim.x/6&press) {//bottone +
+      if (fattore<=5) {
+        fattore++;
+      }
+      azione=true;
+      press=false;
+    } else if (mouseIsPressed) {
+    } else {
+      press=true;
+    }
+
+    if (mouseIsPressed&dist(pos.x+dim.x*3/4, pos.y+dim.y*3/4, mouseX, mouseY)<=dim.x/6&press) {//bottone -
+      if (fattore>=-9) {
+        fattore--;
+      }
+      azione=true;
+      press=false;
+    } else if (mouseIsPressed) {
+    } else {
+      press=true;
+    }
+  }
+
+  let getScala() {//ritorna scala come 10^fattore
+    return pow(10, fattore);
+  }
+};
 
 Scala scala;
 
@@ -1080,69 +1143,6 @@ class Piano extends Filo {//distribuzione continua piana infinita di carica (est
     }
   }
 }
-
-class Scala {//governa la scala dell'ambiente
-  let fattore;//esponente
-  let press;
-  let pos;
-  let dim;
-
-  Scala(let a, let b) {
-    fattore=0;
-    press=true;
-    pos=createVector(a, b);
-    dim=createVector(110, 55);
-  }
-
-  function show() {//stampa pulsanti e scala su schermo (in basso al centro)
-    update();
-    strokeWeight(1);
-    stroke(0);
-    line(pos.x+5, pos.y, pos.x+5, pos.y+dim.y/2);//distanza tra lineette verticali è unita di 100px
-    line(pos.x+105, pos.y, pos.x+105, pos.y+dim.y/2);
-    fill(0);
-    textAlign(CENTER, CENTER);
-    textSize(dim.y*5/16);
-    text("1*10^"+(fattore+2)+'m', dim.x/2+pos.x, pos.y+dim.y/4);
-    fill(0, 255, 0);
-    circle(pos.x+dim.x/4, pos.y+dim.y*3/4, dim.x/6);//bottoni fattore
-
-    circle(pos.x+dim.x*3/4, pos.y+dim.y*3/4, dim.x/6);
-    fill(0);
-    text('+', pos.x+dim.x/4, pos.y+dim.y*3/4);
-    text('-', pos.x+dim.x*3/4, pos.y+dim.y*3/4);
-  }
-
-
-
-  function update() {//aggiorna scala
-    if (mouseIsPressed&dist(pos.x+dim.x/4, pos.y+dim.y*3/4, mouseX, mouseY)<=dim.x/6&press) {//bottone +
-      if (fattore<=5) {
-        fattore++;
-      }
-      azione=true;
-      press=false;
-    } else if (mouseIsPressed) {
-    } else {
-      press=true;
-    }
-
-    if (mouseIsPressed&dist(pos.x+dim.x*3/4, pos.y+dim.y*3/4, mouseX, mouseY)<=dim.x/6&press) {//bottone -
-      if (fattore>=-9) {
-        fattore--;
-      }
-      azione=true;
-      press=false;
-    } else if (mouseIsPressed) {
-    } else {
-      press=true;
-    }
-  }
-
-  let getScala() {//ritorna scala come 10^fattore
-    return pow(10, fattore);
-  }
-};
 
 class Sensore extends Particella {//sensore di campo elettrico (estende Particella)
   color colore;
