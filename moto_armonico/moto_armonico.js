@@ -70,16 +70,16 @@ function preload(){
     grafico = false;
     accelerazione = false;
     peso = false;
-    TestoSpiegazione=loadImage("../moto_armonico/data/SfondoArmonico.jpg");
-    Simulazione1=loadImage("../moto_armonico/data/Armonico3.jpg");
-    Simulazione2=loadImage("../moto_armonico/data/Pendolo.jpg");
-    Pausa=loadImage("../moto_armonico/data/TastoPausa.png");
-    Play=loadImage("../moto_armonico/data/TastoPlay.png");
-    Play2=loadImage("../moto_armonico/data/TastoPlay2.png");
-    Pausa2=loadImage("../moto_armonico/data/TastoPausa2.png");
-    FormuleOndaArmonica=loadImage("../moto_armonico/data/FormuleMotoArmonico.PNG");
-    FormulePendolo=loadImage("../moto_armonico/data/FormulePendolo.PNG");
-    Comicfont=loadFont("../moto_armonico/data/Louis George Cafe.ttf");
+    TestoSpiegazione=loadImage("moto_armonico/data/SfondoArmonico.jpg");
+    Simulazione1=loadImage("moto_armonico/data/Armonico3.jpg");
+    Simulazione2=loadImage("moto_armonico/data/Pendolo.jpg");
+    Pausa=loadImage("moto_armonico/data/TastoPausa.png");
+    Play=loadImage("moto_armonico/data/TastoPlay.png");
+    Play2=loadImage("moto_armonico/data/TastoPlay2.png");
+    Pausa2=loadImage("moto_armonico/data/TastoPausa2.png");
+    FormuleOndaArmonica=loadImage("moto_armonico/data/FormuleMotoArmonico.PNG");
+    FormulePendolo=loadImage("moto_armonico/data/FormulePendolo.PNG");
+    Comicfont=loadFont("moto_armonico/data/Louis George Cafe.ttf");
 }
 
 function setup(){
