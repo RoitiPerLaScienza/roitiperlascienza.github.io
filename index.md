@@ -17,3 +17,7 @@ I frattali sono oggetti geometrici ricorrenti in scala sempre inferiore, in ques
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)\
 * Triangolo: [**Esegui simulazione**](triangolo_fractal.html)
 * Cerchio: [**Esegui simulazione**](cerchio_fractal.html)
+## Rifrazione
+Questo progetto simula il fenomeno della rifrazione con diversi materiali selezionabili a piacimento\
+Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Rifrazione)\
+[**Esegui simulazione**](rifrazione.html)
