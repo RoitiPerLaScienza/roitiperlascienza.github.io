@@ -22,6 +22,6 @@ Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)
 * Cerchio: [**Esegui simulazione**](cerchio_fractal.html)
 
 ## Rifrazione
-Questo progetto simula il fenomeno della rifrazione con diversi materiali selezionabili a piacimento\
+Questo progetto simula il fenomeno della **rifrazione** con diversi **materiali** selezionabili **a piacimento**\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Rifrazione)\
 [**Esegui simulazione**](rifrazione.html)
