@@ -1,4 +1,4 @@
-let schermata = 0;
+let schermata = 1;
 let TestoSpiegazione;
 let Simulazione1;
 let Simulazione2;
