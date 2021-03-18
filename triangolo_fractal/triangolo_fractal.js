@@ -13,7 +13,7 @@ function draw(){
     text("Click: " + click, 135, 130);
 }
 
-function mousePressed(){
+function mousePressed() {
     if(click >= MAX_CLICK) {
         click=0;
     }
@@ -37,7 +37,6 @@ function frattale(lowerLeft, lowerRight, topCenter, maxClick, curClick){
     }
 }
 
-Cerchio fractal
 let click = 0;
 let MAX_CLICK = 7;
 function setup(){
