@@ -142,11 +142,11 @@ function draw(){
     rect(800, 198, 440, 284);
     textSize(17);
     fill(255);
-    text("Premi INVIO per far comparire la mutazione", 818, 238);
+    text("Premi 'm' per far comparire la mutazione", 818, 238);
     text("Premi 'g' per far riprodurre gli indivdui", 818, 278);
     textSize(19);
     fill(255, 0, 0);
-    text("Premi TAB per avviare la simulazione", 818, 318);
+    text("Premi 's' per avviare la simulazione", 818, 318);
 
 
     textSize(28);    
@@ -208,7 +208,7 @@ function draw(){
     text("Recessiva", 1000, 730);
     
     if (keyPressed()) {
-      if (key == TAB) {
+      if (key == 's') {
         mod = 1;
         frameCount = 0;
       }
@@ -342,7 +342,7 @@ proporzionale al numero di individui (ogni contatore è moltiplicato per 4)*/
 
 //Quando si preme il tasto ENTER, il genoma degli individui sani viene modificato: comparsa della mutazione
     if (keyPressed) {
-      if (key == ENTER) {
+      if (key == 'm') {
         for (j=0; j < num_mutati; j++) {
           if ( gen.get(j) == "XX") {
             gen.set(j, "xx");
