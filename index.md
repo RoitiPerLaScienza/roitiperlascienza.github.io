@@ -27,4 +27,4 @@ Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Rifrazione)\
 [**Esegui simulazione**](rifrazione.html)
 
 ## Altri progetti disponibili per il download
-Sono disponibili altre simulazioni Processing che purtroppo non sono implementabili nella versione web. Se si desidera eseguirli, è possibile eseguire il download degli eseguibili [da qui](downloads.html).
+Sono disponibili altre simulazioni Processing che purtroppo non sono implementabili nella versione web. Se si desidera eseguirli, è possibile il download degli eseguibili [da qui](downloads.html).
