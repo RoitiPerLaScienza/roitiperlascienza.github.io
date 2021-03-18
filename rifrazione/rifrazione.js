@@ -29,7 +29,7 @@ let font;
 let screen = 0;
 function preload(){
     check = true;
-    font=loadFont("RussoOne.vlw");
+    font=loadFont("rifrazione/data/CaviarDreams.ttf");
 }
 
 function setup(){
@@ -40,18 +40,18 @@ function setup(){
     tx=width / 2;
     frameRate(60);
     textFont(font, 20);
-    V1=new Pulsante(50, 80, 50, 50, loadImage("vetro.png"));
-    W1=new Pulsante(110, 80, 50, 50, loadImage("acqua.png"));
-    B1=new Pulsante(170, 80, 50, 50, loadImage("bromo.png"));
-    O1=new Pulsante(230, 80, 50, 50, loadImage("olio.png"));
-    D1=new Pulsante(290, 80, 50, 50, loadImage("diamante.png"));
-    A1=new Pulsante(350, 80, 50, 50, loadImage("aria.png"));
-    V2=new Pulsante(50, 480, 50, 50, loadImage("vetro.png"));
-    W2=new Pulsante(110, 480, 50, 50, loadImage("acqua.png"));
-    B2=new Pulsante(170, 480, 50, 50, loadImage("bromo.png"));
-    O2=new Pulsante(230, 480, 50, 50, loadImage("olio.png"));
-    D2=new Pulsante(290, 480, 50, 50, loadImage("diamante.png"));
-    A2=new Pulsante(350, 480, 50, 50, loadImage("aria.png"));
+    V1=new Pulsante(50, 80, 50, 50, loadImage("rifrazione/data/vetro.png"));
+    W1=new Pulsante(110, 80, 50, 50, loadImage("rifrazione/data/acqua.png"));
+    B1=new Pulsante(170, 80, 50, 50, loadImage("rifrazione/data/bromo.png"));
+    O1=new Pulsante(230, 80, 50, 50, loadImage("rifrazione/data/olio.png"));
+    D1=new Pulsante(290, 80, 50, 50, loadImage("rifrazione/data/diamante.png"));
+    A1=new Pulsante(350, 80, 50, 50, loadImage("rifrazione/data/aria.png"));
+    V2=new Pulsante(50, 480, 50, 50, loadImage("rifrazione/data/vetro.png"));
+    W2=new Pulsante(110, 480, 50, 50, loadImage("rifrazione/data/acqua.png"));
+    B2=new Pulsante(170, 480, 50, 50, loadImage("rifrazione/data/bromo.png"));
+    O2=new Pulsante(230, 480, 50, 50, loadImage("rifrazione/data/olio.png"));
+    D2=new Pulsante(290, 480, 50, 50, loadImage("rifrazione/data/diamante.png"));
+    A2=new Pulsante(350, 480, 50, 50, loadImage("rifrazione/data/aria.png"));
 }
 
 function draw(){
