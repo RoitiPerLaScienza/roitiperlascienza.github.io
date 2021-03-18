@@ -204,8 +204,8 @@ function draw(){
     }
     textAlign(CENTER);
     fill(255, 0, 0);
-    text("Dominante", 750, 730);
-    text("Recessiva", 1000, 730);
+    text("Dominante", 750, 700);
+    text("Recessiva", 970, 700);
     
     if (keyPressed()) {
       if (key == 's') {
