@@ -81,7 +81,7 @@ function setup(){
   createCanvas(1080, 720);
   background(0);
   frameRate(60);
-  font1 = loadFont("CaviarDreams_Italic.ttf");
+  font1 = loadFont("CaviarDreams.ttf");
   for (i=0; i<40; i++) {
     t = random(0, 2);
     if (t == 0) {
