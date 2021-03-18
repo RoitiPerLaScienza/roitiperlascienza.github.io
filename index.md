@@ -17,7 +17,7 @@ Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Elettroscopio)\
 
 ## Frattali
 I frattali sono oggetti geometrici ricorrenti in scala sempre inferiore, in questa simulazione è possibile **osservarne i diversi step**.\
-Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)\
+Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)
 * Triangolo: [**Esegui simulazione**](triangolo_fractal.html)
 * Cerchio: [**Esegui simulazione**](cerchio_fractal.html)
 
