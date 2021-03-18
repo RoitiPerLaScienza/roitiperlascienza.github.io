@@ -245,7 +245,7 @@ function draw(){
     text (((c5*100)/c) + "%", (2*width/3)+360, (2*height/3)+220);
 
 //La condizione cambia il valore di mod e permette il passaggio alla schermata conclusiva
-    if (balls.size() == 0) mod = 2;
+    if (balls.size() == 0) {mod = 2;}
 
 //azzeramento dei contatori, necessario per il corretto conteggio degli individui
     c = 0;
