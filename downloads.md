@@ -13,7 +13,7 @@ Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Modelli_matemat
 
 ## Campo Elettrico
 Con questo programma è possibile **simulare campi elettrici** e potenziali di cariche puntiformi, fili e piani.\
-Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Modelli_matematici_in_epidemiologia)\
+Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Campo_elettrico)\
 [Scarica progetto](https://www.dropbox.com/s/op2nrbzyldj82pe/Campo_elettrico_app.zip?dl=1)
 
 ## Mutazioni Genetiche
