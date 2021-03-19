@@ -29,6 +29,7 @@ Guida: [Scarica PDF](https://www.dropbox.com/s/v1p7hwhka1sigff/Documentazione%20
 Questo progetto simula il fenomeno della **rifrazione** con diversi **materiali** selezionabili **a piacimento**\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Rifrazione)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/gmfr9dp133nztt9/Rifrazione.mp4?dl=1)\
+Guida codice sorgente: [Scarica](https://www.dropbox.com/s/flh4dqyoj7po3w5/Documentazione%20rifrazione.pdf?dl=1)
 [**Esegui simulazione**](rifrazione.html)
 
 ## Altri progetti disponibili per il download
