@@ -5,14 +5,14 @@ title: Roiti Per La Scienza
 # Progetti Processing
 
 ## Moto Armonico
-<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PendoloPost.jpg" alt="moto_armonico" width="250"/>\
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PendoloPost.jpg" alt="moto_armonico" height="180"/>\
 Simulazione del moto armonico, visto sia come **proiezione** di un moto circolare sul diametro che come semplice **pendolo**.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Moto_armonico)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/yqgsimv19oy6tky/MotoArmonico.mp4?dl=0)\
 [**Esegui simulazione**](moto_armonico.html)
 
 ## Elettroscopio
-<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/elettroscopio.png" alt="elettroscopio" width="250"/>\
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/elettroscopio.png" alt="elettroscopio" height="180"/>\
 L'elettroscopio è uno strumento che permette di **stabilire** se un **corpo è carico** elettricamente.\
 In questa simulazione è possibile vedere l'influenza di corpi carichi nelle vicinanze dello strumento.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Elettroscopio)\
@@ -29,7 +29,7 @@ Guida: [Visualizza PDF](https://www.dropbox.com/s/v1p7hwhka1sigff/Documentazione
 * Cerchio: [**Esegui simulazione**](cerchio_fractal.html)
 
 ## Rifrazione
-<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/RifrazionePost.png" alt="rifrazione" width="250"/>\
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/RifrazionePost.png" alt="rifrazione" height="180"/>\
 Questo progetto simula il fenomeno della **rifrazione** con diversi **materiali** selezionabili **a piacimento**\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Rifrazione)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/gmfr9dp133nztt9/Rifrazione.mp4?dl=0)\
