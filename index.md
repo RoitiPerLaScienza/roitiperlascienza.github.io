@@ -17,6 +17,7 @@ L'elettroscopio è uno strumento che permette di **stabilire** se un **corpo è 
 In questa simulazione è possibile vedere l'influenza di corpi carichi nelle vicinanze dello strumento.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Elettroscopio)\
 Guida codice sorgente: [Visualizza PDF](https://www.dropbox.com/s/unze8oztfd3cjyd/Documentazione%20elettroscopio.pdf?dl=0)\
+Video introduttivo: [Guarda](https://www.dropbox.com/s/kai78wdotkjyfu4/Elettroscopio.mp4?dl=0)
 [**Esegui simulazione**](elettroscopio.html)
 
 ## Frattali
