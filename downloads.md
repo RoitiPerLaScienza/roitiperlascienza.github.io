@@ -17,7 +17,7 @@ Video presentazione: [Guarda](https://www.dropbox.com/s/i7foi2supfy8ten/Pandemic
 Con questo programma è possibile **simulare campi elettrici** e potenziali di cariche puntiformi, fili e piani.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Campo_elettrico)\
 Guida utilizzo programma: [Scarica PDF](https://www.dropbox.com/s/8ur7fgejp7g9fby/Manuale%20simulatore%20campi%20elettrici.pdf?dl=1)\
-Video presentazione: [Guarda](https://www.dropbox.com/s/s9tux7y8cswz3kw/Lezione%20campo%20e%20potenziale%20elettrico.mp4?dl=1)
+Video presentazione: [Guarda](https://www.dropbox.com/s/s9tux7y8cswz3kw/Lezione%20campo%20e%20potenziale%20elettrico.mp4?dl=1)\
 [**Scarica progetto**](https://www.dropbox.com/s/op2nrbzyldj82pe/Campo_elettrico_app.zip?dl=1)
 
 ## Mutazioni Genetiche
