@@ -20,8 +20,8 @@ Guida codice sorgente: [Visualizza PDF](https://www.dropbox.com/s/unze8oztfd3cjy
 [**Esegui simulazione**](elettroscopio.html)
 
 ## Frattali
-<div><img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/frattale_cerchio.png" alt="frattale_cerchio" height="230"/>\
-<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/frattale_triang.png" alt="frattale_triangolo" height="230"/></div>\
+<div><img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/frattale_cerchio.png" alt="frattale_cerchio" height="210"/>
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/frattale_triang.png" alt="frattale_triangolo" height="210"/></div>\
 I frattali sono oggetti geometrici ricorrenti in scala sempre inferiore, in questa simulazione è possibile **osservarne i diversi step**.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/ukio79m9c3292hq/Frattali.mp4?dl=0)\
