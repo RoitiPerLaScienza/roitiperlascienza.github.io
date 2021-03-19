@@ -14,7 +14,7 @@ Video introduttivo: [Guarda](https://www.dropbox.com/s/yqgsimv19oy6tky/MotoArmon
 L'elettroscopio è uno strumento che permette di **stabilire** se un **corpo è carico** elettricamente.\
 In questa simulazione è possibile vedere l'influenza di corpi carichi nelle vicinanze dello strumento.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Elettroscopio)\
-Guida codice sorgente: [Scarica](https://www.dropbox.com/s/unze8oztfd3cjyd/Documentazione%20elettroscopio.pdf?dl=1)\
+Guida codice sorgente: [Scarica PDF](https://www.dropbox.com/s/unze8oztfd3cjyd/Documentazione%20elettroscopio.pdf?dl=1)\
 [**Esegui simulazione**](elettroscopio.html)
 
 ## Frattali
