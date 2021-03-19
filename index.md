@@ -26,6 +26,7 @@ Guida: [Visualizza PDF](https://www.dropbox.com/s/v1p7hwhka1sigff/Documentazione
 * Cerchio: [**Esegui simulazione**](cerchio_fractal.html)
 
 ## Rifrazione
+![rifrazione](https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/RifrazionePost.png)
 Questo progetto simula il fenomeno della **rifrazione** con diversi **materiali** selezionabili **a piacimento**\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Rifrazione)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/gmfr9dp133nztt9/Rifrazione.mp4?dl=0)\
