@@ -32,7 +32,7 @@ Video presentazione: [Parte 1](https://www.dropbox.com/s/rhg353zhsm3jwfn/Eredita
 
 ## Sintesi Proteica
 <img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/sintesi_prot.png" alt="sintesi_proteica" height="180"/>\
-Questo programma **simula** la **trascrizione del codice genetico** all'interno di una cellula.\
+Questo programma **simula** la **sintesi proteica** all'interno di una cellula.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Sintesi_proteica)\
 Guida: [Visualizza PDF](https://www.dropbox.com/s/o1bge3clsd206kn/Documentazione%20sintesi%20proteica.pdf?dl=0)\
 Video presentazione: [Guarda](https://www.dropbox.com/s/n00648zslicogc0/SintesiProteica.mp4?dl=0)\
