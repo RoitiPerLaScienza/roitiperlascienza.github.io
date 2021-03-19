@@ -5,12 +5,14 @@ title: Roiti Per La Scienza
 # Progetti Processing
 
 ## Moto Armonico
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PendoloPost.jpg" alt="moto_armonico" width="250"/>\
 Simulazione del moto armonico, visto sia come **proiezione** di un moto circolare sul diametro che come semplice **pendolo**.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Moto_armonico)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/yqgsimv19oy6tky/MotoArmonico.mp4?dl=0)\
 [**Esegui simulazione**](moto_armonico.html)
 
 ## Elettroscopio
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/elettroscopio.png" alt="elettroscopio" width="250"/>\
 L'elettroscopio è uno strumento che permette di **stabilire** se un **corpo è carico** elettricamente.\
 In questa simulazione è possibile vedere l'influenza di corpi carichi nelle vicinanze dello strumento.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Elettroscopio)\
@@ -18,6 +20,8 @@ Guida codice sorgente: [Visualizza PDF](https://www.dropbox.com/s/unze8oztfd3cjy
 [**Esegui simulazione**](elettroscopio.html)
 
 ## Frattali
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/frattale_cerchio.png" alt="frattale_cerchio" width="250"/>\
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/frattale_triang.png" alt="frattale_triangolo" width="250"/>\
 I frattali sono oggetti geometrici ricorrenti in scala sempre inferiore, in questa simulazione è possibile **osservarne i diversi step**.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/ukio79m9c3292hq/Frattali.mp4?dl=0)\
