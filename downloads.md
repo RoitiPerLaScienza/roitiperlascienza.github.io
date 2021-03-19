@@ -4,7 +4,7 @@ description: Scegli un progetto da scaricare
 ---
 
 ## Pandemic Studio
-<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PandemicPost.png" alt="pandemic_studio" width="250"/>\
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PandemicPost.png" alt="pandemic_studio" width="240" height="180"/>\
 Questo progetto permette di **simulare** la **diffusione di un patogeno** che può anche sfociare in pandemia.\
 E' inoltre possibile osservare il grafico della diffusione grazie ai modelli compartimentali.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Modelli_matematici_in_epidemiologia)\
