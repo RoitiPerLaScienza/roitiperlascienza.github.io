@@ -32,4 +32,4 @@ Video introduttivo: [Guarda](https://www.dropbox.com/s/gmfr9dp133nztt9/Rifrazion
 [**Esegui simulazione**](rifrazione.html)
 
 ## Altri progetti disponibili per il download
-Sono disponibili altre simulazioni Processing che è possibile scaricare ed eseguire sul proprio computer. Se si desidera provarle, è possibile il download degli eseguibili [da qui](downloads.html).
+Sono disponibili altre simulazioni Processing che è possibile scaricare ed eseguire sul proprio computer. Se si desidera provarle, è possibile il **download degli eseguibili [da qui](downloads.html)**.
