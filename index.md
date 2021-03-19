@@ -21,6 +21,7 @@ Guida codice sorgente: [Scarica PDF](https://www.dropbox.com/s/unze8oztfd3cjyd/D
 I frattali sono oggetti geometrici ricorrenti in scala sempre inferiore, in questa simulazione è possibile **osservarne i diversi step**.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Frattale)\
 Video introduttivo: [Guarda](https://www.dropbox.com/s/ukio79m9c3292hq/Frattali.mp4?dl=1)
+Guida: [Scarica PDF](https://www.dropbox.com/s/v1p7hwhka1sigff/Documentazione%20frattali.pdf?dl=1)
 * Triangolo: [**Esegui simulazione**](triangolo_fractal.html)
 * Cerchio: [**Esegui simulazione**](cerchio_fractal.html)
 
