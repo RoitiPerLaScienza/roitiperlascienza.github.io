@@ -1,9 +1,7 @@
 ---
-title: Roiti Per La Scienza
-description: Download progetti Processing
+title: Download progetti
+description: Scegli un progetto da scaricare
 ---
-
-# Scegli un progetto da scaricare
 
 ## Pandemic Studio
 Questo progetto permette di **simulare** la **diffusione di un patogeno** che può anche sfociare in pandemia.\
