@@ -38,4 +38,9 @@ Guida codice sorgente: [Visualizza PDF](https://github.com/RoitiPerLaScienza/roi
 [**Esegui simulazione**](rifrazione.html)
 
 ## Altri progetti disponibili per il download
-Sono disponibili altre simulazioni Processing che è possibile scaricare ed eseguire sul proprio computer. Se si desidera provarle, è possibile il **download degli eseguibili [da qui](downloads.html)**.
+Sono disponibili altre simulazioni Processing che, data la struttura del codice, è possibile scaricare ed eseguire sul proprio computer:
+* simulazione della diffusione di una pandemia
+* simulatore di campi e potenziali elettrici
+* simulazione dello sviluppo di mutazioni genetiche in una popolazione
+* simulazione della sintesi proteica in una cellula
+Se si desidera provarle, è possibile il **download degli eseguibili [da qui](downloads.html)**.
