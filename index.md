@@ -8,7 +8,7 @@ title: Roiti Per La Scienza
 <img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PendoloPost.jpg" alt="moto_armonico" height="180"/>\
 Simulazione del moto armonico, visto sia come **proiezione** di un moto circolare sul diametro che come semplice **pendolo**.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Moto_armonico)\
-Video introduttivo: [Guarda](https://www.dropbox.com/s/yqgsimv19oy6tky/MotoArmonico.mp4?dl=0){:target="_blank"}\
+Video introduttivo: [Guarda](https://www.dropbox.com/s/yqgsimv19oy6tky/MotoArmonico.mp4?dl=0)\
 [**Esegui simulazione**](moto_armonico.html)
 
 ## Elettroscopio
