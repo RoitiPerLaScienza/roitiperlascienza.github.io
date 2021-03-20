@@ -8,7 +8,7 @@ description: Scegli un progetto da scaricare
 Questo progetto permette di **simulare** la **diffusione di un patogeno** che può anche sfociare in pandemia.\
 E' inoltre possibile osservare il grafico della diffusione grazie ai modelli compartimentali.\
 Maggiori informazioni: [Wikipedia](https://it.wikipedia.org/wiki/Modelli_matematici_in_epidemiologia)\
-Guida codice sorgente: [Visualizza PDF](https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/progetti_documentazione/Documentazione%20PandemicStudio.pdf)\
+Guida codice sorgente: [Visualizza PDF](https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/blob/main/progetti_documentazione/Documentazione%20PandemicStudio.pdf)\
 Guida utilizzo programma: [Visualizza PDF](https://www.dropbox.com/s/4awid8e2wy2xbpj/Guida%20PandemicStudio.pdf?dl=0)\
 Informazioni sui modelli matematici: [Visualizza PDF](https://www.dropbox.com/s/fuc6pek3zgaqgae/Modelli%20compartimentali.pdf?dl=0)\
 Video presentazione: [Guarda](https://www.dropbox.com/s/i7foi2supfy8ten/PandemicStudio.mp4?dl=0)\
