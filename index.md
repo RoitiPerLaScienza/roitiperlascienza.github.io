@@ -4,6 +4,8 @@ title: Roiti Per La Scienza
 
 # Progetti Processing
 
+Si raccomanda l'esecuzione delle simulazioni da computer in quanto non è ottimizzata per dispositivi mobili.
+
 ## Moto Armonico
 <img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/PendoloPost.jpg" alt="moto_armonico" height="180"/>\
 Simulazione del moto armonico, visto sia come **proiezione** di un moto circolare sul diametro che come semplice **pendolo**.\
