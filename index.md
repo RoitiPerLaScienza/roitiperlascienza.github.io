@@ -42,5 +42,5 @@ Sono disponibili altre simulazioni Processing che, data la struttura del codice,
 * simulazione della diffusione di una pandemia
 * simulatore di campi e potenziali elettrici
 * simulazione dello sviluppo di mutazioni genetiche in una popolazione
-* simulazione della sintesi proteica in una cellula
+* simulazione della sintesi proteica in una cellula\
 Se si desidera provarle, è possibile il **download degli eseguibili [da qui](downloads.html)**.
