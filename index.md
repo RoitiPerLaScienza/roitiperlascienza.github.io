@@ -39,6 +39,11 @@ Video introduttivo: [Guarda](https://www.dropbox.com/s/gmfr9dp133nztt9/Rifrazion
 Guida codice sorgente: [Visualizza PDF](https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/blob/main/progetti_documentazione/Documentazione%20rifrazione.pdf)\
 [**Esegui simulazione**](rifrazione.html)
 
+# Derivate e integrali
+<img src="https://github.com/RoitiPerLaScienza/roitiperlascienza.github.io/raw/main/imgs/derex.png" alt="rifrazione" height="180"/>\
+Questo programma traccia la funzione originale a partire dal disegno della derivata fatto dall'utente.\
+[**Vai al programma**](derivative_extractor/derivative_extractor.html)
+
 ## Altri progetti disponibili per il download
 Sono disponibili altre simulazioni Processing che, data la struttura del codice, è possibile scaricare ed eseguire sul proprio computer:
 * simulazione della diffusione di una pandemia
