@@ -1,0 +1,263 @@
+<!--
+	* Pietro Bellodi 2021
+	* https://github.com/Belluxx
+-->
+
+<html>
+<head>
+	<title>Derivative Extractor</title>
+	<script type="text/javascript">
+		var canvas, draw_ctx;
+		var mouseX, mouseY, mouseDown = 0;
+		var width, height;
+		var pointsX = [];
+		var pointsY = [];
+		var pointsFX = [];
+		var pointsFY = [];
+
+		function drawAxis(ctx) {
+			r=0; g=0; b=255; alpha=150;
+			ctx.strokeStyle = "rgba("+r+","+g+","+b+","+(alpha/255)+")";
+			ctx.beginPath();
+			ctx.moveTo(0, height/2);
+			ctx.lineTo(width, height/2);
+			ctx.closePath();
+			ctx.stroke();
+		}
+
+		function drawDot(ctx, x, y, size) {
+			if (verify.checked) {
+				if ((pointsX.length == 0) || (x > pointsX[pointsX.length - 1])) { // Must be a function
+					r=0; g=0; b=0; alpha=255;
+					ctx.fillStyle = "rgba("+r+","+g+","+b+","+(alpha/255)+")";
+					ctx.beginPath();
+					ctx.arc(x, y, size, 0, Math.PI*2, true); 
+					ctx.closePath();
+					ctx.fill();
+
+					pointsX.push(x);
+					pointsY.push(getRelativeY(y));
+				}
+			} else {
+				r=0; g=0; b=0; alpha=255;
+				ctx.fillStyle = "rgba("+r+","+g+","+b+","+(alpha/255)+")";
+				ctx.beginPath();
+				ctx.arc(x, y, size, 0, Math.PI*2, true); 
+				ctx.closePath();
+				ctx.fill();
+
+				pointsX.push(x);
+				pointsY.push(getRelativeY(y));
+			}
+			
+		}
+
+		function drawFuncLine(ctx, x1, y1, x2, y2) {
+			r=50; g=200; b=0; alpha=255;
+			ctx.strokeStyle = "rgba("+r+","+g+","+b+","+(alpha/255)+")";
+			ctx.beginPath();
+			ctx.lineWidth = 3;
+			ctx.moveTo(x1, y1);
+			ctx.lineTo(x2, y2);
+			ctx.closePath();
+			ctx.stroke();
+			ctx.lineWidth = 1;
+		}
+
+		function calcAndDrawFunc() {
+			pointsFX = [];
+			pointsFY = [];
+
+			if (!verify.checked) {sortPoints();}
+
+			for (var i = 0; i < pointsX.length; i++) {
+				xd = pointsX[i]; // Derivative X
+				md = pointsY[i]; // Derivative Y
+				xfp = pointsFX[i-1]; // Function previous X
+				yfp = pointsFY[i-1]; // Function previous Y
+
+				if (i != 0) {
+					pointsFX.push(xd);
+					pointsFY.push(xd*md - xfp*md + yfp);
+				} else { // If first point, choose arbitrary y
+					if (md > 0) {
+						pointsFX.push(xd); // Same X
+						pointsFY.push(450); // Bottom
+					} else {
+						pointsFX.push(xd); // Same X
+						pointsFY.push(50); // Top
+					}
+				}
+			}
+
+			result_ctx.clearRect(0, 0, result_canvas.width, result_canvas.height);
+			pointsFY = mapArray(pointsFY, 50, 450);
+			for (var i = 0; i < pointsY.length; i++) {
+				xf = pointsFX[i];
+				yf = pointsFY[i];
+				xfp = pointsFX[i-1]; // Function previous X
+				yfp = pointsFY[i-1]; // Function previous Y
+
+				drawFuncLine(result_ctx, xfp, yfp, xf, yf);
+			}	
+		}
+
+		function merge() {
+			for (var i = 0; i < pointsY.length; i++) {
+				xf = pointsFX[i];
+				yf = pointsFY[i];
+				xfp = pointsFX[i-1]; // Function previous X
+				yfp = pointsFY[i-1]; // Function previous Y
+
+				drawFuncLine(draw_ctx, xfp, yfp, xf, yf);
+			}
+		}
+
+		function clearCanvas() {
+			draw_ctx.clearRect(0, 0, draw_canvas.width, draw_canvas.height);
+			result_ctx.clearRect(0, 0, result_canvas.width, result_canvas.height);
+			drawAxis(draw_ctx);
+			pointsX = [];
+			pointsY = [];
+			pointsFX = [];
+			pointsFY = [];
+		}
+
+		function draw_mouseDown() {
+			mouseDown=1;
+			drawDot(draw_ctx, mouseX, mouseY, 4);
+		}
+
+		function draw_mouseUp() {
+			mouseDown = 0;
+		}
+
+		function draw_mouseMove(e) { 
+			// Update mouse coords
+			getMousePos(e);
+
+			// Draw a dot if mouse pressed
+			if (mouseDown == 1) {
+				drawDot(draw_ctx, mouseX, mouseY, 4);
+			}
+		}
+
+		function getMousePos(e) {
+			if (!e)
+				var e = event;
+
+			if (e.offsetX) {
+				mouseX = e.offsetX;
+				mouseY = e.offsetY;
+			} else if (e.layerX) {
+				mouseX = e.layerX;
+				mouseY = e.layerY;
+			}
+		}
+
+		function getRelativeY(y) {
+			return y - (height/2);
+		}
+
+		function map(x, in_min, in_max, out_min, out_max) {
+			return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+		}
+
+		function mapArray(array, out_min, out_max) {
+			var mappedArray = array;
+			var max = Math.max.apply(null, mappedArray);
+			var min = Math.min.apply(null, mappedArray);
+
+			for (var i = 0; i < array.length; i++) {
+				mappedArray[i] = map(mappedArray[i], min, max, out_min, out_max);
+			}
+
+			return mappedArray;
+		}
+
+		function sortPoints() {
+			var list = [];
+
+			// Merge
+			for (var i = 0; i < pointsX.length; i++) {
+				list.push({'x': pointsX[i], 'y': pointsY[i]});
+			}
+
+			// Sort
+			list.sort(function(a, b) {return ((a.x < b.x) ? -1 : ((a.x == b.x) ? 0 : 1));});
+
+			// Split again
+			for (var i = 0; i < list.length; i++) {
+				pointsX[i] = list[i].x;
+				pointsY[i] = list[i].y;
+			}
+		}
+
+
+		function init() {
+			draw_canvas = document.getElementById('drawingarea');
+			result_canvas = document.getElementById('resultarea');
+			verify = document.getElementById("verify_cb");
+
+			if (draw_canvas.getContext) {
+				draw_ctx = draw_canvas.getContext('2d');
+				result_ctx = result_canvas.getContext('2d');
+			}
+
+			if (draw_ctx) {
+				draw_canvas.addEventListener('mousedown', draw_mouseDown, false);
+				draw_canvas.addEventListener('mousemove', draw_mouseMove, false);
+				window.addEventListener('mouseup', draw_mouseUp, false);
+				width = draw_canvas.width;
+				height = draw_canvas.height;
+				clearCanvas();
+			}
+
+			setInterval(calcAndDrawFunc, 10);
+		}
+	</script>
+	<style>
+		.drawspace {
+			border: 3px solid #888;
+			border-radius: 12px;
+		}
+
+		#clean_btn {
+			background-color: #D11800;
+			border: none;
+			border-radius: 8px;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			font-weight: bold;
+			margin: 4px 2px;
+		}
+
+		#sup_btn {
+			background-color: #003FD1;
+			border: none;
+			border-radius: 8px;
+			color: white;
+			padding: 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			font-weight: bold;
+			margin: 4px 2px;
+		}
+	</style>
+</head>
+
+<body onload="init()">
+	<canvas class="drawspace" id="drawingarea" height="500" width="500"></canvas>
+	<canvas class="drawspace" id="resultarea" height="500" width="500"></canvas><br/>
+	<input id="clean_btn" type="submit" value="Pulisci" onclick="clearCanvas(canvas,draw_ctx);">
+	<input id="sup_btn" type="submit" value="Sovrapponi" onclick="merge();">
+	<input id="verify_cb" type="checkbox">
+	<label for="verify_cb">Garantisci esistenza funzione</label>
+</body>
+</html> 
